@@ -196,7 +196,7 @@ app.get('/api/dashboard', async (req, res) => {
     ]
   });
 });
-
+app.get('/', (req, res) => { res.send('Impulsa MiRo backend activo'); });
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log('App Impulsa Mi.Ro lista'));
 
